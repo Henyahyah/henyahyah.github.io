@@ -91,6 +91,10 @@ a:active {
   transform: scale(0.95);
 }
 
+.indent {
+    text-indent: 1rem;
+}
+
 
 /* Big Titles */
 h1 {
