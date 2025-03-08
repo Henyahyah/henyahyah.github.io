@@ -31,26 +31,33 @@
   <script>
     function toggleTheme() {
         let themeLink = document.getElementById("themeStylesheet");
+        let themeToggleButton = document.getElementById("themeToggle");
         let currentTheme = themeLink.getAttribute("href");
 
-        // Switch between themes
         if (currentTheme === "cozy.css") {
             themeLink.setAttribute("href", "outerwilds.css");
-            localStorage.setItem("theme", "outerwilds"); // Save preference
+            localStorage.setItem("theme", "outerwilds");
+            themeToggleButton.textContent = "Switch to Cozy Theme";
         } else {
             themeLink.setAttribute("href", "cozy.css");
             localStorage.setItem("theme", "cozy");
+            themeToggleButton.textContent = "Switch to Outer Wilds Theme";
         }
     }
 
     // Load saved theme on page reload
     window.onload = function () {
         let savedTheme = localStorage.getItem("theme");
+        let themeLink = document.getElementById("themeStylesheet");
+        let themeToggleButton = document.getElementById("themeToggle");
+
         if (savedTheme) {
-            document.getElementById("themeStylesheet").setAttribute("href", savedTheme + ".css");
+            themeLink.setAttribute("href", savedTheme + ".css");
+            themeToggleButton.textContent = savedTheme === "cozy" ? "Switch to Outer Wilds Theme" : "Switch to Cozy Theme";
         }
     };
 </script>
+
 
 </body>
 
