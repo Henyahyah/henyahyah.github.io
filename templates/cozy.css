@@ -89,7 +89,7 @@ a {
   transition: background-color 0.2s ease-out; /* Smooth color change */
 }
 a:hover {
-  background-color: ##572300; /* HSL 17% */
+  background-color: #572300; /* HSL 17% */
 }
 a:active {
   transform: scale(0.95);
