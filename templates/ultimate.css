@@ -1,0 +1,40 @@
+/* Basic h1 Styles */
+h1 {
+  font-family: "Trebuchet MS", sans-serif; /* Clean font */
+  font-size: 2.5rem; /* Adjust size */
+  font-weight: bold; /* Make it bold */
+  color: #ff7d25; /* Outer Wilds orange */
+  text-align: center; /* Center text */
+  line-height: 1.3; /* Adjust spacing between lines */
+  text-transform: uppercase; /* Make text ALL CAPS */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+  transition: color 0.3s ease-in-out; /* Smooth color change on hover */
+}
+
+/* Hover Effect */
+h1:hover {
+  color: #d9651c; /* Darker orange when hovered */
+  text-decoration: underline; /* Add underline effect */
+}
+
+/* Animated Text */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+h1 {
+  animation: fadeIn 1s ease-in-out; /* Fade in effect */
+}
+
+/* Gradient Text */
+h1.gradient {
+  background: linear-gradient(to right, #ff7d25, #d9651c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Outlined Text */
+h1.outline {
+  -webkit-text-stroke: 2px black; /* Black outline */
+  color: white;
+}
