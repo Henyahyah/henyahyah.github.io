@@ -18,6 +18,27 @@ html {
 body {
   background-color: #1a0a00; /* HSL 5% */
 }
+
+
+.home-button {
+  display: inline-block; /* buttonifies it */
+  padding: 10px 20px; /* inside space */
+  background-color: #ff7d25; /* Outer Wilds orange */
+  color: #ffefe5; /* 95% */
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px; /* for rounded corners */
+  transition: background-color 0.3s ease-in-out; /* Smooth color change */
+}
+.home-button:hover {
+  background-color: #bd4b00; /* HSL 37% */
+}
+.home-button:active {
+  transform: scale(0.95);
+}
+
+
 /* Big Titles */
 h1 {
 		font-family: "Trebuchet MS", Tahoma, sans-serif;
@@ -31,6 +52,7 @@ h2 {
   	color: #ff7d25;
 		text-align:left;
 		font-size: 1.5rem;
+		text-decoration: underline;
  	}
 /* Normal Paragraph Information */
 p {
