@@ -18,9 +18,8 @@ html {
 body {
      background-color: #1a0a00; /* HSL 5% */
      font-family: "Trebuchet MS", Tahoma, sans-serif;
-     color: #ff7d25
-     padding-left: 10px;
-     padding-right: 10px;
+     color: #ff7d25;
+     padding: 0 5vw;
 }
 
 
