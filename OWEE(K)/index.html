@@ -35,12 +35,12 @@
         let currentTheme = themeLink.getAttribute("href");
 
         if (currentTheme === "cozy.css") {
-            themeLink.setAttribute("href", "outerwilds.css");
-            localStorage.setItem("theme", "outerwilds");
+            themeLink.setAttribute("href", "../templates/outerwilds.css");
+            localStorage.setItem("theme", "../templates/outerwilds");
             themeToggleButton.textContent = "Switch to Cozy Theme";
         } else {
-            themeLink.setAttribute("href", "cozy.css");
-            localStorage.setItem("theme", "cozy");
+            themeLink.setAttribute("href", "../templates/cozy.css");
+            localStorage.setItem("theme", "../templates/cozy");
             themeToggleButton.textContent = "Switch to Outer Wilds Theme";
         }
     }
