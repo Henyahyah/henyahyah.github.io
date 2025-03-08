@@ -1,0 +1,125 @@
+/* Default/Desktop */
+html {
+  font-size: 16px; /* 1rem = 16px */
+}
+/* Tablets */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+/* Phones */
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+body {
+     background-color: #0b1e26;
+     font-family: "Trebuchet MS", Tahoma, sans-serif;
+     color: #ffffff;
+     padding: 0 5vw;
+}
+
+
+/* Header */
+header {
+    background-color: #ff7d25;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #174e7d;
+}
+
+/*
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+*/
+
+main {
+    padding: 20px;
+    text-align: left;
+}
+
+footer {
+    background-color: #676e4c;
+    color: #1a0a00;
+    text-align: left;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+footer h2 {
+    color: #6a4d75;
+}
+footer p {
+    color: #0b1e26;
+}
+
+
+a {
+  display: inline-block; /* buttonifies it */
+  padding: 8px 8px; /* inside space */
+  background-color: #174e7d;
+  color: #0b1e26; /* 95% */
+  font-family: "Trebuchet MS", Tahoma, sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px; /* for rounded corners */
+  transition: background-color 0.2s ease-out; /* Smooth color change */
+}
+a:hover {
+  background-color: #0b1e26; /* HSL 17% */
+}
+a:active {
+  transform: scale(0.95);
+}
+
+.indent {
+    text-indent: 1rem;
+}
+
+
+/* Big Titles */
+h1 {
+	color: #ff0000;
+	text-align:center;
+	font-size: 3rem;
+ 	}
+/* Section Headers */
+h2 {
+	color: #6a4d75;
+	text-align:left;
+	font-size: 1.5rem;
+	text-decoration: underline;
+ 	}
+/* Normal Paragraph Information */
+p {
+  	color: #ffffff; /* HSL 95% */
+	text-align:justify;
+	font-size: 1rem;
+	font-weight: normal;
+ 	}
