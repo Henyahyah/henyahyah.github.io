@@ -1,0 +1,24 @@
+body {
+  background-color: #1a0a00; /* HSL 5% */
+}
+/* Big Titles */
+h1 {
+		font-family: "Trebuchet MS", Tahoma, sans-serif;
+  	color: #ff7d25; /* OW Orange */
+		text-align:center;
+		font-size:300%;
+ 	}
+/* Section Headers */
+h2 {
+		font-family: "Trebuchet MS", Tahoma, sans-serif;
+  	color: #ff7d25;
+		text-align:left;
+		font-size:150%;
+ 	}
+/* Normal Paragraph Information */
+p {
+		font-family: "Trebuchet MS", Tahoma, sans-serif;
+  	color: #ffefe5; /* HSL 95% */
+		text-align:justify;
+		font-size:100%;
+ 	}
