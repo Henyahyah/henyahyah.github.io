@@ -20,7 +20,7 @@ body {
 }
 
 
-.home-button {
+a {
   display: inline-block; /* buttonifies it */
   padding: 10px 20px; /* inside space */
   background-color: #ff7d25; /* Outer Wilds orange */
@@ -31,10 +31,10 @@ body {
   border-radius: 8px; /* for rounded corners */
   transition: background-color 0.3s ease-in-out; /* Smooth color change */
 }
-.home-button:hover {
+a:hover {
   background-color: #bd4b00; /* HSL 37% */
 }
-.home-button:active {
+a:active {
   transform: scale(0.95);
 }
 
