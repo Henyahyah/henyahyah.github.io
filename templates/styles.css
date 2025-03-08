@@ -22,14 +22,15 @@ body {
 
 a {
   display: inline-block; /* buttonifies it */
-  padding: 10px 20px; /* inside space */
+  padding: 8px 8px; /* inside space */
   background-color: #ff7d25; /* Outer Wilds orange */
   color: #ffefe5; /* 95% */
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-family: "Trebuchet MS", Tahoma, sans-serif;
+  font-size: 0.8rem;
+  font-weight: normal;
   text-decoration: none;
   border-radius: 8px; /* for rounded corners */
-  transition: background-color 0.3s ease-in-out; /* Smooth color change */
+  transition: background-color 0.2s ease-out; /* Smooth color change */
 }
 a:hover {
   background-color: #bd4b00; /* HSL 37% */
