@@ -27,7 +27,31 @@
   <a href="/">Site Home</a>
   <p>&copy; 2025 Henry, Fulton, and Liam</p>
 </footer>
-  
+
+  <script>
+    function toggleTheme() {
+        let themeLink = document.getElementById("themeStylesheet");
+        let currentTheme = themeLink.getAttribute("href");
+
+        // Switch between themes
+        if (currentTheme === "cozy.css") {
+            themeLink.setAttribute("href", "outerwilds.css");
+            localStorage.setItem("theme", "outerwilds"); // Save preference
+        } else {
+            themeLink.setAttribute("href", "cozy.css");
+            localStorage.setItem("theme", "cozy");
+        }
+    }
+
+    // Load saved theme on page reload
+    window.onload = function () {
+        let savedTheme = localStorage.getItem("theme");
+        if (savedTheme) {
+            document.getElementById("themeStylesheet").setAttribute("href", savedTheme + ".css");
+        }
+    };
+</script>
+
 </body>
 
 </html>
