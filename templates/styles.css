@@ -1,6 +1,20 @@
+  /* Default/Desktop */
 html {
-  font-size: 16px; /* Base size */
+  font-size: 16px; /* 1rem = 16px */
 }
+/* Tablets */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px; /* Shrinks all rem-based fonts */
+  }
+}
+/* Phones */
+@media (max-width: 480px) {
+  html {
+    font-size: 12px; /* Even smaller for small screens */
+  }
+}
+
 body {
   background-color: #1a0a00; /* HSL 5% */
 }
