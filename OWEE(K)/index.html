@@ -34,13 +34,14 @@
         let themeToggleButton = document.getElementById("themeToggle");
         let currentTheme = themeLink.getAttribute("href");
 
-        if (currentTheme === "cozy.css") {
+        // Toggle between cozy.css and outerwilds.css in the templates folder
+        if (currentTheme === "../templates/cozy.css") {
             themeLink.setAttribute("href", "../templates/outerwilds.css");
             localStorage.setItem("theme", "../templates/outerwilds");
             themeToggleButton.textContent = "Switch to Cozy Theme";
         } else {
             themeLink.setAttribute("href", "../templates/cozy.css");
-            localStorage.setItem("theme", "../templates/cozy");
+            localStorage.setItem("theme", "cozy");
             themeToggleButton.textContent = "Switch to Outer Wilds Theme";
         }
     }
@@ -51,12 +52,17 @@
         let themeLink = document.getElementById("themeStylesheet");
         let themeToggleButton = document.getElementById("themeToggle");
 
-        if (savedTheme) {
-            themeLink.setAttribute("href", savedTheme + ".css");
-            themeToggleButton.textContent = savedTheme === "cozy" ? "Switch to Outer Wilds Theme" : "Switch to Cozy Theme";
+        // Default to "cozy" theme if no theme is saved
+        if (!savedTheme) {
+            savedTheme = "cozy";
         }
+
+        // Update the href based on the saved theme
+        themeLink.setAttribute("href", "../templates/" + savedTheme + ".css");
+        themeToggleButton.textContent = savedTheme === "cozy" ? "Switch to Outer Wilds Theme" : "Switch to Cozy Theme";
     };
 </script>
+
 
 
 </body>
