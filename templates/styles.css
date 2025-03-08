@@ -20,6 +20,7 @@ body {
      font-family: "Trebuchet MS", Tahoma, sans-serif;
      color: #ff7d25
      padding: 10px;
+     margin: 5;
 }
 
 
@@ -68,6 +69,7 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    margin: 5;
 }
 footer h2 {
     color: #1a0a00;
