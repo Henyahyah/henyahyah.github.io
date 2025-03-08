@@ -19,8 +19,8 @@ body {
      background-color: #1a0a00; /* HSL 5% */
      font-family: "Trebuchet MS", Tahoma, sans-serif;
      color: #ff7d25
-     padding: 10px;
-     margin: 5;
+     padding-left: 10px;
+     padding-right: 10px;
 }
 
 
@@ -69,7 +69,8 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-    margin: 5;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 footer h2 {
     color: #1a0a00;
