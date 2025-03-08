@@ -1,17 +1,17 @@
-  /* Default/Desktop */
+/* Default/Desktop */
 html {
   font-size: 16px; /* 1rem = 16px */
 }
 /* Tablets */
 @media (max-width: 768px) {
   html {
-    font-size: 14px; /* Shrinks all rem-based fonts */
+    font-size: 14px;
   }
 }
 /* Phones */
 @media (max-width: 480px) {
   html {
-    font-size: 12px; /* Even smaller for small screens */
+    font-size: 12px;
   }
 }
 
@@ -19,6 +19,7 @@ body {
      background-color: #1a0a00; /* HSL 5% */
      font-family: "Trebuchet MS", Tahoma, sans-serif;
      color: #ff7d25
+     padding: 10px;
 }
 
 
@@ -74,7 +75,7 @@ footer {
 a {
   display: inline-block; /* buttonifies it */
   padding: 8px 8px; /* inside space */
-  background-color: #ff7d25; /* Outer Wilds orange */
+  background-color: #bd4b00;
   color: #ffefe5; /* 95% */
   font-family: "Trebuchet MS", Tahoma, sans-serif;
   font-size: 0.8rem;
@@ -84,7 +85,7 @@ a {
   transition: background-color 0.2s ease-out; /* Smooth color change */
 }
 a:hover {
-  background-color: #bd4b00; /* HSL 37% */
+  background-color: ##572300; /* HSL 17% */
 }
 a:active {
   transform: scale(0.95);
