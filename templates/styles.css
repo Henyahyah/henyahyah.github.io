@@ -16,8 +16,59 @@ html {
 }
 
 body {
-  background-color: #1a0a00; /* HSL 5% */
+     background-color: #1a0a00; /* HSL 5% */
+     font-family: "Trebuchet MS", Tahoma, sans-serif;
+     color: #ff7d25
 }
+
+
+/* Header */
+header {
+    background-color: #ff7d25;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #1a0a00;
+}
+
+/*
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+*/
+
+main {
+    padding: 20px;
+    text-align: left;
+}
+
+footer {
+    background-color: #ff7d25;
+    color: #1a0a00;
+    text-align: left;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
 
 
 a {
@@ -42,24 +93,19 @@ a:active {
 
 /* Big Titles */
 h1 {
-		font-family: "Trebuchet MS", Tahoma, sans-serif;
-  	color: #ff7d25; /* OW Orange */
-		text-align:center;
-		font-size: 3rem;
+	text-align:center;
+	font-size: 3rem;
  	}
 /* Section Headers */
 h2 {
-		font-family: "Trebuchet MS", Tahoma, sans-serif;
-  	color: #ff7d25;
-		text-align:left;
-		font-size: 1.5rem;
-		text-decoration: underline;
+	text-align:left;
+	font-size: 1.5rem;
+	text-decoration: underline;
  	}
 /* Normal Paragraph Information */
 p {
-		font-family: "Trebuchet MS", Tahoma, sans-serif;
   	color: #ffefe5; /* HSL 95% */
-		text-align:justify;
-		font-size: 1rem;
+	text-align:justify;
+	font-size: 1rem;
 	font-weight: normal;
  	}
