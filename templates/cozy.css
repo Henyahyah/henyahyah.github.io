@@ -19,7 +19,6 @@ body {
      background-color: #1a0a00; /* HSL 5% */
      font-family: "Trebuchet MS", Tahoma, sans-serif;
      color: #ff7d25;
-     padding: 0 5vw;
 }
 
 
@@ -56,7 +55,7 @@ nav ul li a:hover {
 */
 
 main {
-    padding: 20px;
+    padding: 0 20px;
     text-align: left;
 }
 
