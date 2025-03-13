@@ -21,6 +21,10 @@ body {
      color: #ff7d25;
 }
 
+body p {
+    text-indent: 1rem;
+}
+
 header {
     background-color: #ff7d25;
     padding: 15px;
@@ -124,5 +128,4 @@ p {
 	text-align:justify;
 	font-size: 1rem;
 	font-weight: normal;
-	text-indent: 1rem;
  	}
