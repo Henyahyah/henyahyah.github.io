@@ -105,10 +105,6 @@ a:active {
   transform: scale(0.95);
 }
 
-.indent {
-    text-indent: 1rem;
-}
-
 /* Big Titles */
 h1 {
 	color: #ffefe5;
@@ -128,4 +124,5 @@ p {
 	text-align:justify;
 	font-size: 1rem;
 	font-weight: normal;
+	text-indent: 1rem;
  	}
