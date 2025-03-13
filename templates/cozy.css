@@ -36,6 +36,7 @@ header h1 {
 nav {
     background-color: #ff0000;
     padding: 10px;
+    gap: 20px;
 }
 
 nav h2 {
