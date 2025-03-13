@@ -37,6 +37,7 @@ nav {
     background-color: #ff0000;
     padding: 10px;
     gap: 20px;
+    justify-content: space-between;
 }
 
 nav h2 {
