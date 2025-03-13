@@ -21,8 +21,6 @@ body {
      color: #ff7d25;
 }
 
-
-/* Header */
 header {
     background-color: #ff7d25;
     padding: 15px;
@@ -35,24 +33,30 @@ header h1 {
     color: #1a0a00;
 }
 
-/*
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
 }
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+
+nav li {
+    margin-right: 20px;
 }
-nav ul li a {
+
+nav a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
 }
-nav ul li a:hover {
+
+nav a:hover {
     text-decoration: underline;
 }
-*/
 
 main {
     padding: 0 20px;
@@ -73,7 +77,6 @@ footer {
 footer h2 {
     color: #1a0a00;
 }
-
 
 a {
   display: inline-block; /* buttonifies it */
@@ -97,7 +100,6 @@ a:active {
 .indent {
     text-indent: 1rem;
 }
-
 
 /* Big Titles */
 h1 {
