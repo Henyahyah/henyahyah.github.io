@@ -1,21 +1,76 @@
+
 <!DOCTYPE html>
 <html>
   
 <head>
   <title>Celestial Bodies</title>
-  <link rel="stylesheet" href="../templates/styles.css">
+  <link id="themeStylesheet" rel="stylesheet" href="../templates/cozy.css">
 </head>
 
 <body>
 
-<h1>Outer Wilds: Echoes of the Eye Celestial Bodies</h1>
+<header>
+  <h1>Celestial Bodies</h1>
+  <button id="toggleTheme" onclick="toggleTheme()">Toggle Theme</button>
+</header>
+
+<nav>
+  <p>Common Pages:    </p>
+  <ul>
+    <li><a href="celestial-bodies.html">Celestial Bodies</a></li>
+  </ul>
+</nav>
+
+<section>
+  <h2>The Sun</h2>
+  <p id="indent">The Sun is the star in the center of the Outer Wilds Solar System.</p>
+</section>
   
-<h2>Credits</h2>
-<p>Website coded by Henry</p>
-<p>Wiki information provided by Liam</p>
-<a href="index.html">OWEE(K) Home</a>
-<a href="/">Wiki Home</a>
-  
+<footer>
+  <h2>Credits</h2>
+  <p>Website coded by Henry</p>
+  <p>Outer Wilds: Echoes of the Eye information provided by Liam</p>
+  <a href="/">Site Home</a>
+  <p>&copy; 2025 Henry, Fulton, and Liam</p>
+</footer>
+
+  <script>
+    function toggleTheme() {
+        let themeLink = document.getElementById("themeStylesheet");
+        let themeToggleButton = document.getElementById("themeToggle");
+        let currentTheme = themeLink.getAttribute("href");
+
+        // Toggle between cozy.css and outerwilds.css in the templates folder
+        if (currentTheme === "../templates/cozy.css") {
+            themeLink.setAttribute("href", "../templates/outerwilds.css");
+            localStorage.setItem("theme", "../templates/outerwilds");
+            themeToggleButton.textContent = "Switch to Cozy Theme";
+        } else {
+            themeLink.setAttribute("href", "../templates/cozy.css");
+            localStorage.setItem("theme", "cozy");
+            themeToggleButton.textContent = "Switch to Outer Wilds Theme";
+        }
+    }
+
+    // Load saved theme on page reload
+    window.onload = function () {
+        let savedTheme = localStorage.getItem("theme");
+        let themeLink = document.getElementById("themeStylesheet");
+        let themeToggleButton = document.getElementById("themeToggle");
+
+        // Default to "cozy" theme if no theme is saved
+        if (!savedTheme) {
+            savedTheme = "cozy";
+        }
+
+        // Update the href based on the saved theme
+        themeLink.setAttribute("href", "../templates/" + savedTheme + ".css");
+        themeToggleButton.textContent = savedTheme === "cozy" ? "Switch to Outer Wilds Theme" : "Switch to Cozy Theme";
+    };
+</script>
+
+
+
 </body>
 
 </html>
